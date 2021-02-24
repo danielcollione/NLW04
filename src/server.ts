@@ -1,23 +1,11 @@
+import "reflect-metadata"; 
 import express from "express";
+import "./database"; //Por padrão ja reconhece que o index quem manda.
+import { router } from "./routes";
 
 const app = express();
 
-/**
- * GET
- * POST
- * PUT
- * DELETE
- * PATCH
- */
+app.use(express.json());
+app.use(router);
 
-//Criação de métodos, primeiramente a Rota, depois request e response//
-
-app.get("/users", (request, response) => {
-  return response.json({ message: "Hello World - NLW04" });
-});
-
-app.post("/", (request, response) => {
-  return response.json({ message: "Os dados foram salvos com sucesso!" });
-});
-
-app.listen(3333, () => console.log("Seu servidor está rodando!"));
+app.listen(3333, () => console.log("The server is running!"));

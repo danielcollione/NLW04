@@ -1,4 +1,4 @@
-//---Comands---//
+//---Aula 1---//
 
 **compilar typescript no node:
 
@@ -8,3 +8,15 @@
  - yarn add ts-node-dev -D
 
 #rumoaopróximonível
+
+//---Aula 2---//
+
+**typeORM:
+
+ - yarn add typeorm reflect-metadata
+ - yarn add sqlite3
+ - yarn typeorm.migrations -n CreateUsers
+ - yarn typeorm migration:run
+ - yarn typeorm migration:revert
+ - yarn add uuid
+ - yarn add @types/uuid -d
