@@ -20,3 +20,25 @@
  - yarn typeorm migration:revert
  - yarn add uuid
  - yarn add @types/uuid -d
+
+//---Aula 3---//
+
+ - Ctrl + Shit + O //Limpar dependencias que nao esta sendo usada.
+
+ - Testes Automatizados:
+    1 - Testes unitarios (back e front end);
+
+    2 - Testes de integracao (back e front end);
+         -> request -> routes -> controller -> repository
+         <- repository <- controller <- response
+
+    3 - Test Ponta a Ponta (E2E) (front end);
+
+  - yarn add jest @types/jest -D
+  - yarn jest --init
+  - yarn add ts-jest -D
+  - yarn add supertest @types/supertest -D
+  - yarn add cross-env -D
+  - "test": "cross-env NODE_ENV=test jest"
+
+  #focopraticagrupo
