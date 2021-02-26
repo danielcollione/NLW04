@@ -42,3 +42,8 @@
   - "test": "cross-env NODE_ENV=test jest"
 
   #focopraticagrupo
+
+//---Aula 4---//
+   - yarn add nodemailer
+   - yarn add handlebars
+
